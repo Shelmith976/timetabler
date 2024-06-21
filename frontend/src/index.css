@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .table-cell{
+        width: 100px;
+        height: 40px;
+        border: 1px solid #a3a4ab;
+        text-align: center;
+    }
+}

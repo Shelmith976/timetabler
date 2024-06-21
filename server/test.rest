@@ -1,0 +1,49 @@
+GET http://localhost:3005/csv/trial
+
+###
+GET http://localhost:3005/cls/generate
+
+
+###
+GET http://localhost:3005/dept/get-department/?department_Id=1
+
+###
+DELETE http://localhost:3005/dept/delete-department/?departmentId=14
+
+### 
+GET http://localhost:3005/lec/lecturers
+Authorization: Basic base64-user-password eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MTE5NTUwMDUsImV4cCI6MTcxMTk1NzQwNX0.QaDL2TeyB3x1jEru0h6RAyr8KVr97WtHK4KmRc4AhN4
+
+###
+GET http://localhost:3005/dept/get-department/?departmentId=3
+
+
+###
+POST http://localhost:3005/sub/subjects
+Content-Type: application/json
+
+{
+   "department_id":11,
+  "course_name":"BSC EEE"
+}
+
+
+###
+PUT http://localhost:3005/dept/update-department/?departmentId=12
+Content-Type: application/json
+
+{
+ 
+"department_name":"Information Science Technology"
+}
+###
+POST http://localhost:3005/user/login
+Content-Type: application/json
+
+
+{
+"user_name":"admin",
+"password":"admin"
+
+}
+
